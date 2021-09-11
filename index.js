@@ -1,17 +1,26 @@
 const crypto = require('crypto');
 const Serialize = require('php-serialize');
-const express = require( 'express' );
+const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
+
+const { verifyPaddleWebhook } = require('verify-paddle-webhook');
+
 
 const port = 3000;
 
 // Parses urlencoded webhooks from paddle to JSON with keys sorted alphabetically ascending and values as strings
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded());
 
 // app.get('/', (req, res) => res.send('Hello World!'));
 app.post("/", (req, res) => {
-    if (validateWebhook(req.body)) {
+    console.log("This is the req body:")
+    console.log(req.body)
+
+    // this shit doesn't work
+    // if (validateWebhook(req.body)) {
+    if (verifyPaddleWebhook(pubKey, req.body)) {
         console.log('WEBHOOK_VERIFIED');
         res.status(200).end();
     } else {
