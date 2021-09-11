@@ -1,6 +1,13 @@
-const express = require('express');
+const crypto = require('crypto');
+const Serialize = require('php-serialize');
+const express = require( 'express' );
+const bodyParser = require("body-parser");
 const app = express();
+
 const port = 3000;
+
+// Parses urlencoded webhooks from paddle to JSON with keys sorted alphabetically ascending and values as strings
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // app.get('/', (req, res) => res.send('Hello World!'));
 app.post("/", (req, res) => {
