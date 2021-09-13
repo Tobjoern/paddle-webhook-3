@@ -34,18 +34,18 @@ app.listen(process.env.PORT || port, () => console.log(`Example app listening at
 
 // Public key from your paddle dashboard
 const pubKey = `-----BEGIN PUBLIC KEY-----
-MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzaPfhSvGj+bW+v6r+TtX
-c9qM58nQaZbXRFN+IgsyLnOmXNIMZb/jiMnsRNdusHzPyzg2OPjGHodvbv88As8M
-ei7W7BMp7wS7HJhcbuP4/+xOkEIGqtQU+/xsWx/Iz8U6OZMiCs2vEHFHNwzMP04I
-DD66Tny739BOGgkkWOSJ6mvy8vGMeWcjJQaUaaziKVx4TG2XoY//qfmgT2I3pZ95
-tWFvuElJtbbMqE6fHroQergk0gCiBpEPdoiccHN1K97i6XGfVIcLB/QXP3it3IPe
-Ild7+RLj3F+U7HyCS5DThQVPS7Vg1NLVWkSFSdXvgkdIz9SHq/uhkreNA6Bf4A89
-+hEEGbCvPl39iZWjLTIkM6F7aBl3h9Xxv5PMhnwRh/rtWwUNxTyRctL/Txe9MBC/
-biomZmV0NX3fKnUiEIl6sC+cR7wGH7zb5yyUY/iVYr0SP/vU5QY1FrFV4tJkx7GM
-04xg9LdyzFOevwVOMOTBfLYyBLrndb5aCLx5FCxZhasR+WMg/sbycq0Q3Rh9sRor
-iZR61Doqvau6OLf4Yj8BtHAYZF0RcrMIDoku5XG3JtMPkkq0107e8pIzf21b11uC
-GGtdpc1ezZ8XvMLIThq3uEr6zvyMQwdkQ62NCim4RP4/PtK7qJ4f0rjnchSJTNX3
-wnNOHCiB4lqWBOGpStSui48CAwEAAQ==
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtkwZh9Q6y9degpLNTdJa
+xV8ty0/6x5gObNz248WN/wObRv5MsaxGT/fKPhCleL4GaN/c4fpxYycDwmft8WQH
+sTdEOXFHVA6uIoK586afdvh96k77CbbFvaWIhzsK1X5rmwK/0DHdbd4P4GxQMCIj
+ldRvSJ8SBeL+3mzlkiiPT7lQKbFjRV0qTjbiirgacI8rnbBkgvuzvroapZcrGXNF
+gjViOJ4AJYsaQupzi4KEXYGWL/BBi/CbHkS8HpOytuDqw7TWQ3tSRKykvdXd7XRx
+piDnhdbEs1oOaWS7jCDg3iSFFPlrLGJu8ukMz+xMvYB/hJdOnM1zdI7TKdiP+9x/
+yUwfUmKV4lw5TezEUtn/jAab+OkA39+CORHe31cdhKvGMqtstOkuKSUSexLv84JV
+3A5ClY0b6iFfc1lr1XKroQGmWQoXf+BCaOar0EkKbaQvK+jCBUJBoniFmSW5MSpm
+iI4GZVxz1RsH4NM3d2/emOO4crP+dgW566f7IO6GasqpPUDfEXQiazR5oC1JQAOk
+Npv3/5mb+BqQeZKgcT7/83nQpnt7Wjn7oPH2+cTbTw0jFoi3DeAEgOlJh+VE7LpN
+XBDRF/gj5IgCP54pqruLZVf04umacfwFYEDA3zPAokCjY++9UKcne2R8KM7uxQSC
+sdalH/HbbUhrBrBeYbhhG0UCAwEAAQ==
 -----END PUBLIC KEY-----`
 
 function ksort(obj) {
