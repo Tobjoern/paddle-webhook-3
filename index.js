@@ -80,6 +80,9 @@ function validateWebhook(jsonObj) {
     verifier.update(serialized);
     verifier.end();
 
+    console.log('Now doing verification:')
+    console.log(pubKey)
+    console.log(mySig)
     const verification = verifier.verify(pubKey, mySig);
     // Used in response if statement
     return verification;
